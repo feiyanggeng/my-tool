@@ -1,4 +1,3 @@
-[submodule "operations"]
+[submodule "packages/operations"]
 	path = packages/operations
 	url = https://github.com/feiyanggeng/operations.git
-	branch = op-dev
