@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "commit-compare": "node scripts/commitCompare.js",
     "genfiles": " rm -rf ./tempDist && mkdir tempDist && node scripts/genFileSystem/index.js"
   },
   "repository": {
