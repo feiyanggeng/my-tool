@@ -30,7 +30,7 @@ module.exports = name => {
     app = name.match(/^(admin|portal|idp)/)[1];
     targetModule = name.match(/\/(\w+)$/)[1];
     targetDir = name.match(/^\w+\/(.+)\/\w+$/)[1];
-    absoluteTargetDir = path.join(appDirectory,"operations", "src", app, targetDir || "");
+    absoluteTargetDir = path.join(appDirectory,"packages/operations", "src", app, targetDir || "");
   }
   const ModuleName = targetModule.replace(
     /^\w/,

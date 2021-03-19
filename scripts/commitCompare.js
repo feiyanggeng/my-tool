@@ -39,7 +39,7 @@ prompt(promptMessages).then((answer) => {
 
 function getCommitLogs(branchName, logFormat) {
   try {
-    const resultStr = shell.exec(`cd operations && git log origin/${branchName} --pretty=format:"${logFormat}"`, { silent: true });
+    const resultStr = shell.exec(`cd packages/operations && git log origin/${branchName} --pretty=format:"${logFormat}"`, { silent: true });
     return resultStr.split('\n');
   } catch (err) {
     return [];
