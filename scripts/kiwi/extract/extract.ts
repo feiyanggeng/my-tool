@@ -59,8 +59,8 @@ function extractAll(dirPath?: string, apiKey?: string) {
   }
 
   allTargetStrs.forEach(item => {
-    const currentFilename = item.file;
-    const targetStrs = item.texts;
+    const currentFilename = item.file;  // 当前中文文案存在的文件的地址
+    const targetStrs = item.texts;      // 文本内容对象 [{range: {start: 12, end: 56}, text: "测试", isString: false}]
     const suggestPageRegex = /\/pages\/\w+\/([^\/]+)\/([^\/\.]+)/;
 
     let suggestion = [];

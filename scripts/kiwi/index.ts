@@ -52,8 +52,6 @@ const argv = yargs.options({
   },
 }).argv;
 
-console.log(argv);
-
 if (argv.init) {
   (async () => {
     const result = await inquirer.prompt({
@@ -137,7 +135,7 @@ if (argv.extract) {
       extractAll();
     } else {
       const fullPath = path.join(argv.extract, value.dir)
-      extractAll(fullPath, "AIzaSyBh_WgFVOydUL01i62smDJ_4cyO0OixlEY");
+      extractAll(fullPath, "");
     }
    })();
 }
