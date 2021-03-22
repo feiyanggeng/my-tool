@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit-compare": "node scripts/commitCompare.js",
-    "genfiles": " rm -rf ./tempDist && mkdir tempDist && node scripts/genFileSystem/index.js"
+    "genfiles": " rm -rf ./tempDist && mkdir tempDist && node scripts/genFileSystem/index.js",
+    "kiwi": "ts-node scripts/kiwi/index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,32 @@
   },
   "homepage": "https://github.com/feiyanggeng/my-tool#readme",
   "dependencies": {
+    "@angular/compiler": "^7.2.0",
+    "@babel/core": "^7.5.5",
+    "@types/commander": "^2.12.2",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.12.14",
+    "@types/yargs": "^16.0.0",
     "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "d3-dsv": "^2.0.0",
     "figlet": "^1.5.0",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.2",
+    "google-translate": "^3.0.0",
     "inquirer": "^8.0.0",
     "js-yaml": "^4.0.0",
     "json-server": "^0.16.3",
     "lodash": "^4.17.21",
+    "ora": "^5.4.0",
+    "prettier": "^2.2.1",
     "qs": "^6.9.6",
-    "shelljs": "^0.8.4"
+    "randomstring": "^1.1.5",
+    "shelljs": "^0.8.4",
+    "slash2": "^2.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "vue-template-compiler": "^2.6.12",
+    "yargs": "^16.2.0"
   }
 }
